@@ -1,95 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Slacker Card</title>
+  <meta charset="utf-8">
+  <title>Udacity Site Header</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-  <meta name="udacity-grader" content="tests.json">
+  
   <style>
     * {
-    	box-sizing: border-box;
+      box-sizing: border-box;
     }
-    
     body {
       font-family: 'Open Sans', sans-serif;
-      color: #222;
+
+      margin: 0;
+      padding: 0;
     }
     
-    .card {
-      height: 475px;
-      width: 325px;
-      box-shadow: 0px 5px 15px 0px rgba(153,153,153,0.5);
-      border-radius: 4px;
+    header {
+      font-weight: 800;
+      -webkit-font-smoothing: antialiased;
+
+      background: white;
+      height: 85px;
+      padding: 15px;
     }
-    
-    .top {
-    	height: 55%;
-        border-radius: 4px 4px 0px 0px;
-      	border: 1px solid #ddd;
-      	padding: 0px 16px;
+    section {
+      padding: 16px;
     }
-    
-    .name {
-      padding-top: calc(475px * 0.40);
-      margin: 0px;
+    .flex-container {
+      display: flex;
     }
-    
-    .status {
+    .space-between {
+      justify-content: space-between;
+    }
+    .vertical-centerer {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .header-content {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .logo {
+      width: 500px;
       display: inline-block;
-      width: 10px;
-      height: 10px;
-      margin-left: 4px;
-
-      border-radius: 5px;
-      background-color: #60D156;
+      margin: 10px 0px;
     }
-    
-    .time {
-      color: #444;
-      font-size: 0.8em;
-      padding-top: 0.2em;
+    .menu {
+      list-style: none;
+      list-style-type: none;
     }
-    .bottom {
-      height: 40%;
-      border-radius: 0px 0px 4px 4px;
-      border: 1px solid #ddd;
-      padding: 8px 16px;
+    .menu > li {
+      display: inline;
+      margin-left: 37.5px;
     }
-    .profile-action {
-      display: block;
-      width: 100%;
-      height: 32px;
-      font-size: 1em;
-      text-align: left;
-
-      border: 0px;
-      background-color: white;
-    }
-    .profile-action:hover {
-      background-color: #00A5D2;
-      color: white;
-    }
-    
   </style>
 </head>
 <body>
-  <section>
-    <div class="card">
-      <div class="top">
-        <h3 class="name">Udacity Stufent <span class="status"></span></h3>
-        <p class="title">Learner Extraordinaire</p>
-      </div>
-      <div class="middle">
-        <div class="time">12:34 PM local time</div>
-      </div>
-      <div class="bottom">
-		<button class="profile-action">View preferences</button>
-        <button class="profile-action">Open account settings</button>
-        <button class="profile-action">Edit your profile</button>
-        <button class="profile-action">View your files</button>
-        <button class="profile-action">Set yourself away</button>
+  <header>
+    <div class="vertical-centerer flex-container">
+      <div class="flex-container space-between header-content">
+        <div>
+          <span>
+            <img class="logo" src="Udacity_Logo_SVG_200x35.svg" alt="Udacity Logo">
+          </span>
+        </div>
+        <div>
+          <ul class="menu">
+            <li>Nanodegree</li>
+            <li>Catalog</li>
+            <li>Classroom</li>
+          </ul>
+        </div>
       </div>
     </div>
+  </header>
+  <section>
+    <p>Ewww. The header looks weird.</p>
+
+    <p>
+      You need to use workspace editor to change this website and get the header looking the way it should.
+    </p>
   </section>
 </body>
 </html>
