@@ -7,3 +7,11 @@ if (value > 0) {
 } else {
   alert( 0 );
 }
+
+let result;
+result = (a + b < 4) : "Below" : "Lower";
+
+let message = (login == 'Employee') ? 'Hello' :
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
