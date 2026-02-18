@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 80px;
+}
+
+/* ЛЕВАЯ ЧАСТЬ */
+.logo {
+    max-width: 450px;
+}
+
+#header {
+    color: #1877f2;
+    font-size: 76px;
+    font-weight: bold;
+}
+
+#desc {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #1c1e21;
+}
+
+/* ПРАВАЯ ЧАСТЬ */
+.reg-form {
+    width: 400px;
+    text-align: center;
+}
+
+.reg-form form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.reg-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+#login-btn {
+    width: 100%;
+    background-color: #1877f2;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#login-btn:hover {
+    background-color: #166fe5;
+}
+
+#forgot-pass {
+    display: block;
+    margin: 15px 0;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0.5px solid #ddd;
+}
+
+#create-account-btn {
+    background-color: #42b72a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#create-account-btn:hover {
+    background-color: #36a420;
+}
+
+.create-page {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#create-page-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
